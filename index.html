@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Taskinator - A Desktop Kanban &amp; Notes App</title>
+  <meta name="description" content="A fast, keyboard-driven desktop app for managing tasks with a Kanban board, braindump notes, and quick capture. Built with Svelte and Tauri.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo-group">
+        <img src="logo.png" alt="The Taskinator logo">
+        <span>The Taskinator</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="active">Home</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#features">Features</a>
+      <a href="#shortcuts">Shortcuts</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- Hero -->
+    <section class="hero">
+      <img src="logo.png" alt="The Taskinator" class="hero-logo">
+      <h1>The Taskinator</h1>
+      <p class="tagline">A fast, keyboard-driven desktop Kanban board with built-in notes.</p>
+      <div class="version">v0.3.0</div>
+      <br>
+      <a href="#downloads" class="download-btn">Download The Taskinator</a>
+      <span class="download-sub">Windows &middot; Free &middot; Lightweight</span>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <h2>Features</h2>
+      <ul class="features-list">
+        <li>
+          <strong>Kanban Board</strong>
+          <span>4 columns &mdash; Backlog, To-Do, Doing, Done. Move tasks with quick buttons or keyboard shortcuts.</span>
+        </li>
+        <li>
+          <strong>Braindump Notes</strong>
+          <span>Built-in markdown editor with syntax highlighting and auto-save. Turn selected text into tasks instantly.</span>
+        </li>
+        <li>
+          <strong>Dashboard &amp; Reminders</strong>
+          <span>Statistics overview, overdue/due-today counts, and a reminders screen organized by urgency.</span>
+        </li>
+        <li>
+          <strong>Quick Capture</strong>
+          <span>Floating popup window to jot down thoughts without leaving your current workflow.</span>
+        </li>
+        <li>
+          <strong>Keyboard-First</strong>
+          <span>Global shortcuts for search, task creation, note navigation. Designed for speed.</span>
+        </li>
+        <li>
+          <strong>Priorities &amp; Due Dates</strong>
+          <span>P1/P2/P3 priority levels with color coding. Due date tracking with overdue indicators.</span>
+        </li>
+        <li>
+          <strong>Dark &amp; Light Themes</strong>
+          <span>Clean dark theme by default. Switch to light mode in settings.</span>
+        </li>
+        <li>
+          <strong>Lightweight &amp; Native</strong>
+          <span>Built with Tauri &mdash; small binary, low memory, no Electron bloat. Runs on Windows, macOS, and Linux.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Screenshot -->
+    <section class="section">
+      <h2>Screenshot</h2>
+      <div class="screenshot-wrap">
+        <div class="placeholder">App screenshot &mdash; add a screenshot.png to this folder and update the src below.</div>
+        <!-- Replace placeholder with: <img src="screenshot.png" alt="The Taskinator screenshot"> -->
+      </div>
+    </section>
+
+    <!-- Downloads -->
+    <section class="section" id="downloads">
+      <h2>Downloads</h2>
+      <table class="downloads-table">
+        <thead>
+          <tr>
+            <th>File</th>
+            <th>Platform</th>
+            <th>Type</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Taskinator Installer</td>
+            <td>Windows 10/11 <span class="badge badge-blue">64-bit</span></td>
+            <td>.msi</td>
+            <td><a href="#">Download</a></td>
+          </tr>
+          <tr>
+            <td>The Taskinator Portable</td>
+            <td>Windows 10/11 <span class="badge badge-blue">64-bit</span></td>
+            <td>.zip</td>
+            <td><a href="#">Download</a></td>
+          </tr>
+          <tr>
+            <td>The Taskinator</td>
+            <td>macOS <span class="badge badge-green">Universal</span></td>
+            <td>.dmg</td>
+            <td><a href="#">Coming soon</a></td>
+          </tr>
+          <tr>
+            <td>The Taskinator</td>
+            <td>Linux <span class="badge badge-orange">AppImage</span></td>
+            <td>.AppImage</td>
+            <td><a href="#">Coming soon</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Keyboard Shortcuts -->
+    <section class="section" id="shortcuts">
+      <h2>Keyboard Shortcuts</h2>
+      <div class="shortcuts-grid">
+        <div class="shortcut">
+          <kbd>Ctrl+F</kbd>
+          <span>Global search</span>
+        </div>
+        <div class="shortcut">
+          <kbd>Ctrl+1</kbd>
+          <span>Create P1 task from note</span>
+        </div>
+        <div class="shortcut">
+          <kbd>Ctrl+2</kbd>
+          <span>Create P2 task from note</span>
+        </div>
+        <div class="shortcut">
+          <kbd>Ctrl+3</kbd>
+          <span>Create P3 task from note</span>
+        </div>
+        <div class="shortcut">
+          <kbd>Ctrl+B</kbd>
+          <span>Create backlog task</span>
+        </div>
+        <div class="shortcut">
+          <kbd>Enter</kbd>
+          <span>Open task details</span>
+        </div>
+        <div class="shortcut">
+          <kbd>Delete</kbd>
+          <span>Delete selected task</span>
+        </div>
+        <div class="shortcut">
+          <kbd>Esc</kbd>
+          <span>Close overlays</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>&copy; 2025 Eyal Koren</span>
+      <span>The Taskinator v0.3.0 &middot; Built with Svelte &amp; Tauri</span>
+    </div>
+  </footer>
+
+</body>
+</html>
